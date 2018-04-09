@@ -21,10 +21,10 @@ from wiki.web.forms import URLForm
 from wiki.web import current_wiki
 from wiki.web import current_users
 from wiki.web.user import protect
+from wiki.core import Page
 
 
 bp = Blueprint('wiki', __name__)
-
 
 @bp.route('/')
 @protect
@@ -34,11 +34,11 @@ def home():
         return display('home')
     return render_template('home.html')
 
-
 @bp.route('/index/')
 @protect
 def index():
     pages = current_wiki.index()
+    pages = Page.filter_old_versions(pages)
     return render_template('index.html', pages=pages)
 
 
@@ -47,6 +47,36 @@ def index():
 def display(url):
     page = current_wiki.get_or_404(url)
     return render_template('page.html', page=page)
+
+@bp.route('/display_version/<path:url>/')
+@protect
+def display_version(url):
+    """
+    @file: routes.py
+    @author: Dustin Gulley
+    @date: 04/08/2018
+    Similar to display but with only conditions applying to a previous version
+    """
+    page = current_wiki.get_or_404(url)
+    return render_template('versioned_page.html', page=page)
+
+@bp.route('/recover/<path:url>/')
+@protect
+def recover(url):
+    """
+    @file: routes.py
+    @author: Dustin Gulley
+    @date: 04/08/2018
+    Sets the page corresponding to the url as the newest version
+    """
+    page = current_wiki.get_or_404(url)
+    form = EditorForm(obj=page)
+    if not page:
+        page = current_wiki.get_bare(url)
+    form.populate_obj(page)
+    page.save()
+    flash('"%s" was saved.' % page.title, 'success')
+    return redirect(url_for('wiki.display', url=url))
 
 
 @bp.route('/create/', methods=['GET', 'POST'])
@@ -69,9 +99,36 @@ def edit(url):
             page = current_wiki.get_bare(url)
         form.populate_obj(page)
         page.save()
-        flash('"%s" was saved.' % page.title, 'success')
-        return redirect(url_for('wiki.display', url=url))
+        new_path = Page.get_highest_version_of_file_path(page.path)
+        pages = current_wiki.index()
+        new_page = None
+
+        for p in pages:
+            if p.path == new_path:
+                new_page = p
+
+        if p is None:
+            new_page = page
+
+        flash('"%s" was saved.' % new_page.title, 'success')
+        return redirect(url_for('wiki.display', url=new_page.url))
     return render_template('editor.html', form=form, page=page)
+
+
+@bp.route('/versions/<path:url>/', methods=['GET', 'POST'])
+@protect
+def versions(url):
+    """
+    @file: routes.py
+    @author: Dustin Gulley
+    @date: 04/08/2018
+    Returns all page versions of a specified url
+    'myfile_v1' -> [Page with 'path/to/myfile_v1.txt', Page with 'path/to/myfile_v2.txt']
+    """
+    page = current_wiki.get(url)
+    all_pages = current_wiki.index()
+    pages = Page.get_versions(page.path, all_pages)
+    return render_template('versions.html', pages=pages)
 
 
 @bp.route('/preview/', methods=['POST'])
@@ -91,6 +148,17 @@ def move(url):
     if form.validate_on_submit():
         newurl = form.url.data
         current_wiki.move(url, newurl)
+
+        # Delete non-moved pages
+        all_pages = current_wiki.index()
+        pages = Page.get_versions(page.path, all_pages)
+
+        for p in pages:
+            current_wiki.delete(p.url)
+
+        flash('Page "%s" was deleted.' % page.title, 'success')
+
+
         return redirect(url_for('wiki.display', url=newurl))
     return render_template('move.html', form=form, page=page)
 
@@ -99,7 +167,12 @@ def move(url):
 @protect
 def delete(url):
     page = current_wiki.get_or_404(url)
-    current_wiki.delete(url)
+    all_pages = current_wiki.index()
+    pages = Page.get_versions(page.path, all_pages)
+
+    for p in pages:
+        current_wiki.delete(p.url)
+
     flash('Page "%s" was deleted.' % page.title, 'success')
     return redirect(url_for('wiki.home'))
 
@@ -107,15 +180,31 @@ def delete(url):
 @bp.route('/tags/')
 @protect
 def tags():
-    tags = current_wiki.get_tags()
-    return render_template('tags.html', tags=tags)
+    ts = current_wiki.get_tags()
+    new_tags = {}
+    for t in ts:
+        if t not in new_tags:
+            new_tags[t] = []
+        for p in ts[t]:
+            page = Page.get_highest_version_of_file_path(p.path)
+            if page not in new_tags[t]:
+                new_tags[t].append(page)
+
+    return render_template('tags.html', tags=new_tags)
 
 
 @bp.route('/tag/<string:name>/')
 @protect
 def tag(name):
     tagged = current_wiki.index_by_tag(name)
-    return render_template('tag.html', pages=tagged, tag=name)
+    new_pages = []
+
+    for t in tagged:
+        p = Page.get_highest_version_of_file_path(t.path)
+        if t.path == p and t not in new_pages:
+            new_pages.append(t)
+
+    return render_template('tag.html', pages=new_pages, tag=name)
 
 
 @bp.route('/search/', methods=['GET', 'POST'])
@@ -124,6 +213,7 @@ def search():
     form = SearchForm()
     if form.validate_on_submit():
         results = current_wiki.search(form.term.data, form.ignore_case.data)
+        results = Page.filter_old_versions(results)
         return render_template('search.html', form=form,
                                results=results, search=form.term.data)
     return render_template('search.html', form=form, search=None)
