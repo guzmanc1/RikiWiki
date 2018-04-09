@@ -5,6 +5,6 @@ TITLE='Riki'
 HISTORY_SHOW_MAX=30
 PIC_BASE = '/static/content/'
 CONTENT_DIR = '/Users/smcho/PycharmProjects/Riki/content'
-USER_DIR = '/Users/smcho/PycharmProjects/Riki/user'
+USER_DIR = 'user'
 NUMBER_OF_HISTORY = 5
 PRIVATE = True
