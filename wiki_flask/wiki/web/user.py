@@ -29,9 +29,9 @@ class UserManager(object):
         with open(self.file, 'w') as f:
             f.write(json.dumps(data, indent=2))
 
-    def add_user(self, name, password,
-                 active=True, roles=[], authentication_method=None):
+    def add_user(self, name, password, active=True, roles=[], authentication_method=None):
         users = self.read()
+
         if users.get(name):
             return False
         if authentication_method is None:
@@ -42,6 +42,7 @@ class UserManager(object):
             'authentication_method': authentication_method,
             'authenticated': False
         }
+
         # Currently we have only two authentication_methods: cleartext and
         # hash. If we get more authentication_methods, we will need to go to a
         # strategy object pattern that operates on User.data.

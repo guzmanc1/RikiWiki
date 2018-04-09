@@ -12,12 +12,14 @@ from flask_login import current_user
 from flask_login import login_required
 from flask_login import login_user
 from flask_login import logout_user
+from user import UserManager
 
 from wiki.core import Processor
 from wiki.web.forms import EditorForm
 from wiki.web.forms import LoginForm
 from wiki.web.forms import SearchForm
 from wiki.web.forms import URLForm
+from wiki.web.forms import CreateUserForm
 from wiki.web import current_wiki
 from wiki.web import current_users
 from wiki.web.user import protect
@@ -245,9 +247,18 @@ def user_index():
     pass
 
 
-@bp.route('/user/create/')
+@bp.route('/user/create/', methods=['GET', 'POST'])
 def user_create():
-    pass
+    form = CreateUserForm()
+    manager = UserManager('user')
+    if form.validate_on_submit():
+        manager.add_user(form.name.data, form.password.data, True, [], None)
+        user = current_users.get_user(form.name.data)
+        login_user(user)
+        user.set('authenticated', True)
+        flash('User successfully created', 'success')
+        return redirect(url_for('wiki.index'))
+    return render_template('createuser.html', form=form)
 
 
 @bp.route('/user/<int:user_id>/')
