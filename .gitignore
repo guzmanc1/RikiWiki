@@ -1,3 +1,15 @@
 
 wiki_flask/config.py
+.gitignore
+wiki_flask/venv
+wiki_flask/.venv
+wiki_flask/*.pyc
+wiki_flask/*.sublime-*
+wiki_flask/.DS_Store
+wiki_flask/.cache
+wiki_flask/.eggs
+wiki_flask/*.egg-info
+wiki_flask/dist/
+wiki_flask/.idea
+wiki_flask/.idea/
 wiki_flask/config.py

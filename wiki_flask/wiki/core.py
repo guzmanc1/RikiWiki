@@ -337,7 +337,7 @@ class Page(object):
         filename_no_version = Page.__get_filename_without_version(filename_ext[0])
 
         if version > 0:
-            return path + "/" + filename_no_version + '_v' + str(version) + '.' + filename_ext[1]
+            return os.path.join(path, filename_no_version + '_v' + str(version) + '.' + filename_ext[1])
         else:
             return file_path
 
@@ -362,7 +362,7 @@ class Page(object):
     @staticmethod
     def get_versions(filepath, all_versions):
         """
-        @file: routes.py
+        @file: core.py
         @author: Dustin Gulley
         @date: 04/08/2018
         Filters out all files that aren't a version of the filepath
@@ -375,9 +375,34 @@ class Page(object):
         pages = []
         for version in versions:
             for v in all_versions:
-                if path + '/' + version == v.path:
+                if os.path.join(path, version) == v.path:
                     pages.append(v)
         return pages
+
+    @staticmethod
+    def get_highest_page_from_unversioned_file(pages, name):
+        """
+        @file: core.py
+        @author: Dustin Gulley
+        @date: 04/10/2018
+        Gets the highest version of an unversioned name
+        'home' -> Page with home_v2.md
+        """
+
+        current_page = None;
+        current_version = -1;
+
+        for page in pages:
+            filename = Page.get_filename_from_path(page.path)
+            filename_ext = Page.__split_filename_from_extension(filename)
+            if re.match(name + '_v\d+$', filename_ext[0]):
+                temp_version = Page.__get_highest_version_number_from_file_path(page.path)
+                if temp_version > current_version:
+                    current_page = page
+                    current_version = temp_version
+
+        return current_page
+
 
     def save(self, update=True):
         folder = os.path.dirname(self.path)
@@ -389,7 +414,7 @@ class Page(object):
         filename_ext = Page.__split_filename_from_extension(filename)
         filename = Page.__get_filename_without_version(filename_ext[0])
 
-        self.path = dirname + '/' + filename + '_v' + str(version) + '.' + filename_ext[1]
+        self.path = os.path.join(dirname, filename + '_v' + str(version) + '.' + filename_ext[1])
 
         if not os.path.exists(folder):
             os.makedirs(folder)

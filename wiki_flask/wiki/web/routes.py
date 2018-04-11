@@ -31,9 +31,11 @@ bp = Blueprint('wiki', __name__)
 @bp.route('/')
 @protect
 def home():
-    page = current_wiki.get('home')
+    pages = current_wiki.index()
+    page = Page.get_highest_page_from_unversioned_file(pages, 'home')
+    # page = current_wiki.get('home')
     if page:
-        return display('home')
+        return display(page.url)
     return render_template('home.html')
 
 @bp.route('/index/')

@@ -9,3 +9,4 @@ content/
 *.egg-info
 dist/
 .idea
+config.py
