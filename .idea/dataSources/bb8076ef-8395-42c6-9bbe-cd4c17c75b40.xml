@@ -32,8 +32,6 @@
       <NameSurrogate>1</NameSurrogate>
       <ColNames>page_id
 tag_id</ColNames>
-      <ColumnCollations>
-</ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="14" parent="6">

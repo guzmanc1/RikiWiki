@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6cd913e-5abb-4d90-a1b9-43da9f27f3b8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/wiki_flask/wiki/Database.py" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/config.py" afterPath="$PROJECT_DIR$/wiki_flask/config.py" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/core.py" afterPath="$PROJECT_DIR$/wiki_flask/wiki/core.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb8076ef-8395-42c6-9bbe-cd4c17c75b40.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bb8076ef-8395-42c6-9bbe-cd4c17c75b40.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,38 +31,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="page_tag: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="tags: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -76,7 +39,7 @@
       <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-730">
+            <state relative-caret-position="7531">
               <caret line="451" column="22" lean-forward="false" selection-start-line="451" selection-start-column="22" selection-end-line="451" selection-end-column="22" />
               <folding />
             </state>
@@ -98,7 +61,7 @@
       <file leaf-file-name="cli.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="272">
               <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#24#33#0" expanded="true" />
@@ -134,23 +97,15 @@
               <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1523356202791" expanded="true" signature="73:232" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="73:246" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="356:478" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="356:479" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="356:480" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="590:853" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="590:916" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
-                <marker date="1523356202791" expanded="true" signature="2974:3006" ph="INSERT INTO pages... " />
-                <marker date="1523356202791" expanded="true" signature="3268:3306" ph="INSERT INTO page_tag... " />
-                <marker date="1523356202791" expanded="true" signature="3268:3334" ph="INSERT INTO page_tag... " />
-                <marker date="1523356202791" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
-                <marker date="1523356202791" expanded="true" signature="3307:3334" ph="SELECT page.... " />
-                <marker date="1523356202791" expanded="true" signature="3726:3759" ph="INSERT INTO pages... " />
-                <marker date="1523356202791" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
-                <marker date="1523356202791" expanded="true" signature="4714:4730" ph="SELECT INSER... " />
-                <marker date="1523356202791" expanded="true" signature="4714:4762" ph="SELECT ? FRO... ?" />
+                <marker date="1523548483340" expanded="true" signature="73:246" ph="CREATE TABLE... pages" />
+                <marker date="1523548483340" expanded="true" signature="356:479" ph="CREATE TABLE... tags" />
+                <marker date="1523548483340" expanded="true" signature="590:916" ph="CREATE TABLE... page_tag" />
+                <marker date="1523548483340" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
+                <marker date="1523548483340" expanded="true" signature="2974:3006" ph="INSERT INTO tags... " />
+                <marker date="1523548483340" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
+                <marker date="1523548483340" expanded="true" signature="3307:3399" ph="SELECT pages... pages" />
+                <marker date="1523548483340" expanded="true" signature="3726:3759" ph="INSERT INTO page_tag... " />
+                <marker date="1523548483340" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
               </folding>
             </state>
           </provider>
@@ -184,7 +139,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="771" />
     <option name="width" value="595" />
     <option name="height" value="728" />
@@ -207,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,8 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,20 +274,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32125986" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12005857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15080526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22913617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0966325" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -341,7 +293,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32125986" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -366,6 +320,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/routes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/Database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1523548483340" expanded="true" signature="73:246" ph="CREATE TABLE... pages" />
+            <marker date="1523548483340" expanded="true" signature="356:479" ph="CREATE TABLE... tags" />
+            <marker date="1523548483340" expanded="true" signature="590:916" ph="CREATE TABLE... page_tag" />
+            <marker date="1523548483340" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
+            <marker date="1523548483340" expanded="true" signature="2974:3006" ph="INSERT INTO tags... " />
+            <marker date="1523548483340" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
+            <marker date="1523548483340" expanded="true" signature="3307:3399" ph="SELECT pages... pages" />
+            <marker date="1523548483340" expanded="true" signature="3726:3759" ph="INSERT INTO page_tag... " />
+            <marker date="1523548483340" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -378,7 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -394,9 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#62#71#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,23 +409,15 @@
           <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1523356202791" expanded="true" signature="73:232" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="73:246" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:478" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:479" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:480" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:853" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:916" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="2974:3006" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3306" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3334" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3307:3334" ph="SELECT page.... " />
-            <marker date="1523356202791" expanded="true" signature="3726:3759" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
-            <marker date="1523356202791" expanded="true" signature="4714:4730" ph="SELECT INSER... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4762" ph="SELECT ? FRO... ?" />
+            <marker date="1523548483340" expanded="true" signature="73:246" ph="CREATE TABLE... pages" />
+            <marker date="1523548483340" expanded="true" signature="356:479" ph="CREATE TABLE... tags" />
+            <marker date="1523548483340" expanded="true" signature="590:916" ph="CREATE TABLE... page_tag" />
+            <marker date="1523548483340" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
+            <marker date="1523548483340" expanded="true" signature="2974:3006" ph="INSERT INTO tags... " />
+            <marker date="1523548483340" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
+            <marker date="1523548483340" expanded="true" signature="3307:3399" ph="SELECT pages... pages" />
+            <marker date="1523548483340" expanded="true" signature="3726:3759" ph="INSERT INTO page_tag... " />
+            <marker date="1523548483340" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
           </folding>
         </state>
       </provider>
@@ -431,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -454,15 +448,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#62#71#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="272">
           <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="e#24#33#0" expanded="true" />
@@ -481,7 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="772" lean-forward="false" selection-start-line="1" selection-start-column="772" selection-end-line="1" selection-end-column="772" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -496,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -527,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -535,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -551,14 +536,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
+        <state relative-caret-position="7531">
           <caret line="451" column="22" lean-forward="false" selection-start-line="451" selection-start-column="22" selection-end-line="451" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -573,37 +565,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/Database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <marker date="1523356202791" expanded="true" signature="73:232" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="73:246" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:478" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:479" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:480" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:853" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:916" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="2974:3006" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3306" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3334" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3307:3334" ph="SELECT page.... " />
-            <marker date="1523356202791" expanded="true" signature="3726:3759" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
-            <marker date="1523356202791" expanded="true" signature="4714:4730" ph="SELECT INSER... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4762" ph="SELECT ? FRO... ?" />
+            <marker date="1523548483340" expanded="true" signature="73:246" ph="CREATE TABLE... pages" />
+            <marker date="1523548483340" expanded="true" signature="356:479" ph="CREATE TABLE... tags" />
+            <marker date="1523548483340" expanded="true" signature="590:916" ph="CREATE TABLE... page_tag" />
+            <marker date="1523548483340" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
+            <marker date="1523548483340" expanded="true" signature="2974:3006" ph="INSERT INTO tags... " />
+            <marker date="1523548483340" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
+            <marker date="1523548483340" expanded="true" signature="3307:3399" ph="SELECT pages... pages" />
+            <marker date="1523548483340" expanded="true" signature="3726:3759" ph="INSERT INTO page_tag... " />
+            <marker date="1523548483340" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
           </folding>
         </state>
       </provider>
