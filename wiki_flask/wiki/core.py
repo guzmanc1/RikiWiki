@@ -276,8 +276,6 @@ class Page(object):
         else:
             return int(version[0])
 
-        return version
-
     @staticmethod
     def __get_highest_version_number(file_list):
         """

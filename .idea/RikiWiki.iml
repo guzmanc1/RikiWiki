@@ -9,6 +9,12 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/wiki_flask/venv/lib/python2.7/site-packages/alembic/templates" />
+	  </list>
+	</option>
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/wiki_flask/wiki/web/templates" />
       </list>
     </option>
   </component>
