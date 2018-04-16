@@ -1,12 +1,13 @@
 from io import open
 import os
 import shutil
+from sqlite3 import Error
 from tempfile import mkdtemp
-from tempfile import mkstemp
 from unittest import TestCase
 
 from wiki.core import Wiki
 from wiki.web import create_app
+from wiki.Database import Database
 
 #: the default configuration
 CONFIGURATION = u"""
@@ -15,6 +16,25 @@ TITLE='test'
 DEFAULT_SEARCH_IGNORE_CASE=False
 DEFAULT_AUTHENTICATION_METHOD='hash'
 """
+
+# page table
+page_table = "CREATE TABLE IF NOT EXISTS pages (" \
+             "id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," \
+             "name TEXT NOT NULL," \
+             "title TEXT NOT NULL," \
+             "body TEXT NOT NULL);"
+
+# tag table with page table foreign key as added tags correspond to a page in the page table
+tag_table = "CREATE TABLE IF NOT EXISTS tags (" \
+            "name TEXT PRIMARY KEY NOT NULL);"
+
+# junction table to store tags on a page and entry of pairs already in table are ignored
+page_tag_table = "CREATE TABLE IF NOT EXISTS page_tag (" \
+                 "page_id INTEGER NOT NULL," \
+                 "tag_id TEXT NOT NULL," \
+                 "PRIMARY KEY(page_id, tag_id) ON CONFLICT IGNORE," \
+                 "FOREIGN KEY(page_id) REFERENCES pages(id)," \
+                 "FOREIGN KEY(tag_id) REFERENCES tags(name));"
 
 
 class WikiBaseTestCase(TestCase):
@@ -77,3 +97,17 @@ class WikiBaseTestCase(TestCase):
         """
         if self.rootdir and os.path.exists(self.rootdir):
             shutil.rmtree(self.rootdir)
+
+    @staticmethod
+    def create_test_database():
+        """
+        Create a test database modeled after wiki database to perform operation on for testing
+        """
+        # create new Database object that connects to test database
+        testDB = Database("testDB")
+        try:
+            testDB.create_table(page_table)
+            testDB.create_table(tag_table)
+            testDB.create_table(page_tag_table)
+        except Error as e:
+            print(e)
