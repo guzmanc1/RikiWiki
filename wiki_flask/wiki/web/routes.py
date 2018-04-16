@@ -111,7 +111,7 @@ def edit(url):
             if p.path == new_path:
                 new_page = p
 
-        if p is None:
+        if new_page is None:
             new_page = page
 
         flash('"%s" was saved.' % new_page.title, 'success')
