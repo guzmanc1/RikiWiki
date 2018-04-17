@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6cd913e-5abb-4d90-a1b9-43da9f27f3b8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb8076ef-8395-42c6-9bbe-cd4c17c75b40.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bb8076ef-8395-42c6-9bbe-cd4c17c75b40.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c0174756-3afe-4950-b747-894101f2ca6f.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c0174756-3afe-4950-b747-894101f2ca6f.xml" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/tests/test_database.py" afterPath="$PROJECT_DIR$/wiki_flask/tests/test_database.py" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/Database.py" afterPath="$PROJECT_DIR$/wiki_flask/wiki/Database.py" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/testDB.db" afterPath="$PROJECT_DIR$/wiki_flask/wiki/testDB.db" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/wiki_flask/.gitignore" afterPath="$PROJECT_DIR$/wiki_flask/.gitignore" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_database.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wiki_flask/tests/test_database.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2636">
@@ -133,6 +130,16 @@
                 <marker date="1523973294240" expanded="true" signature="5654:5706" ph="SELECT COUNT... pages" />
                 <marker date="1523973294240" expanded="true" signature="6033:6095" ph="UPDATE pages... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wiki_flask/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,6 +197,7 @@
         <option value="$PROJECT_DIR$/wiki_flask/tests/__init__.py" />
         <option value="$PROJECT_DIR$/wiki_flask/wiki/Database.py" />
         <option value="$PROJECT_DIR$/wiki_flask/tests/test_database.py" />
+        <option value="$PROJECT_DIR$/wiki_flask/.gitignore" />
       </list>
     </option>
   </component>
@@ -457,13 +465,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/templates/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/templates/tags.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -860,6 +861,14 @@
             <marker date="1523973294240" expanded="true" signature="5654:5706" ph="SELECT COUNT... pages" />
             <marker date="1523973294240" expanded="true" signature="6033:6095" ph="UPDATE pages... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiki_flask/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
