@@ -387,8 +387,8 @@ class Page(object):
         'home' -> Page with home_v2.md
         """
 
-        current_page = None;
-        current_version = -1;
+        current_page = None
+        current_version = -1
 
         for page in pages:
             filename = Page.get_filename_from_path(page.path)
