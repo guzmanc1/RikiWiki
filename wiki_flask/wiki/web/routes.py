@@ -23,6 +23,7 @@ from wiki.web.forms import CreateUserForm
 from wiki.web import current_wiki
 from wiki.web import current_users
 from wiki.web.user import protect
+from datetime import datetime
 
 
 bp = Blueprint('wiki', __name__)
@@ -142,6 +143,11 @@ def user_login():
         return redirect(request.args.get("next") or url_for('wiki.index'))
     return render_template('login.html', form=form)
 
+@bp.route('/user/userindex/', methods=['GET', 'POST'])
+@login_required
+def user_index():
+
+    return render_template('showusers.html', users=current_users.getUsers())
 
 @bp.route('/user/logout/')
 @login_required
@@ -152,17 +158,13 @@ def user_logout():
     return redirect(url_for('wiki.index'))
 
 
-@bp.route('/user/')
-def user_index():
-    pass
-
-
 @bp.route('/user/create/', methods=['GET', 'POST'])
 def user_create():
     form = CreateUserForm()
     manager = UserManager('user')
     if form.validate_on_submit():
-        manager.add_user(form.name.data, form.password.data, True, [], None)
+        localtime = str(datetime.now())
+        manager.add_user(form.name.data, form.password.data, localtime, True, [], None)
         user = current_users.get_user(form.name.data)
         login_user(user)
         user.set('authenticated', True)

@@ -29,7 +29,7 @@ class UserManager(object):
         with open(self.file, 'w') as f:
             f.write(json.dumps(data, indent=2))
 
-    def add_user(self, name, password, active=True, roles=[], authentication_method=None):
+    def add_user(self, name, password, time, active=True, roles=[], authentication_method=None):
         users = self.read()
 
         if users.get(name):
@@ -39,6 +39,7 @@ class UserManager(object):
         new_user = {
             'active': active,
             'roles': roles,
+            'time': time,
             'authentication_method': authentication_method,
             'authenticated': False
         }
@@ -56,6 +57,17 @@ class UserManager(object):
         self.write(users)
         userdata = users.get(name)
         return User(self, name, userdata)
+
+    def getUsers(self):
+        users = self.read()
+        userarray = []
+
+        for i in users:
+            user = User(self,i,users.get(i))
+            user.time = users.get(i).get("time")
+            userarray.append(user)
+
+        return userarray
 
     def get_user(self, name):
         users = self.read()
@@ -104,6 +116,16 @@ class User(object):
 
     def get_id(self):
         return self.name
+
+    @property
+    def time(self):
+        try:
+            return self['time']
+        except KeyError:
+            return self.name
+
+    def time(self, value):
+        self['time'] = value
 
     def check_password(self, password):
         """Return True, return False, or raise NotImplementedError if the

@@ -1,4 +1,12 @@
 {
+  "test2": {
+    "authenticated": true, 
+    "roles": [], 
+    "authentication_method": "cleartext", 
+    "time": "2018-04-17 11:02:04.277164", 
+    "active": true, 
+    "password": "test2"
+  }, 
   "name": {
     "active": true, 
     "authentication_method": "cleartext", 
