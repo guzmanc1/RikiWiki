@@ -23,11 +23,8 @@ from wiki.web.forms import CreateUserForm
 from wiki.web import current_wiki
 from wiki.web import current_users
 from wiki.web.user import protect
-<<<<<<< HEAD
 from datetime import datetime
-=======
 from wiki.core import Page
->>>>>>> bd21e6ddfb5f166bcfeb4e7f19b0644b2c5fa304
 
 
 bp = Blueprint('wiki', __name__)
