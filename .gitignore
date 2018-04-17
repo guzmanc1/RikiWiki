@@ -1,11 +1,8 @@
-
-<<<<<<< HEAD
 wiki_flask/.idea/misc.xml
 wiki_flask/.idea/modules.xml
 wiki_flask/.idea/wiki_flask.iml
 wiki_flask/.idea/workspace.xml
 wiki_flask/.idea/workspace.xml
-=======
 wiki_flask/config.py
 .gitignore
 wiki_flask/venv
@@ -20,5 +17,5 @@ wiki_flask/dist/
 wiki_flask/.idea
 wiki_flask/.idea/
 wiki_flask/config.py
->>>>>>> bd21e6ddfb5f166bcfeb4e7f19b0644b2c5fa304
 wiki_flask/.idea/workspace.xml
+.idea/workspace.xml

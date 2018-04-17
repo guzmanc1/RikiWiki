@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7816d00-a2c2-45ea-8a7c-3b7dc528f542" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_flask/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_flask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_flask/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_flask/wiki/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/web/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiki_flask/wiki/web/routes.py" afterDir="false" />
-	</list>
-    <list default="true" id="b6cd913e-5abb-4d90-a1b9-43da9f27f3b8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/wiki_flask/wiki/Database.py" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/config.py" afterPath="$PROJECT_DIR$/wiki_flask/config.py" />
-      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/core.py" afterPath="$PROJECT_DIR$/wiki_flask/wiki/core.py" />
+    <list default="true" id="acf9b503-64cd-4d4f-b7a2-d607ae7d5551" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/RikiWiki.iml" afterPath="$PROJECT_DIR$/.idea/RikiWiki.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/wiki_flask/.idea/workspace.xml" afterPath="$PROJECT_DIR$/wiki_flask/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/wiki_flask/wiki/Database.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,154 +15,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/RikiWiki$Database.coverage" NAME="Database Coverage Results" MODIFIED="1523349388476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiki_flask/wiki" />
-    <SUITE FILE_PATH="coverage/RikiWiki$Riki.coverage" NAME="Riki Coverage Results" MODIFIED="1523401015490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wiki_flask" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="page_tag: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="pages: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Sqlite (Xerial) - wikiDB" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="tags: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="378" column="35" selection-start-line="378" selection-start-column="35" selection-end-line="378" selection-end-column="35" />
-            </state>
-			<state relative-caret-position="-730">
-              <caret line="451" column="22" lean-forward="false" selection-start-line="451" selection-start-column="22" selection-end-line="451" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Riki.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiki_flask/Riki.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#67#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cli.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding>
-                <element signature="e#24#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/routes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiki_flask/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-			  <folding />
+            <state relative-caret-position="306">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-	  <file leaf-file-name="Database.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/Database.py">
+      <file leaf-file-name="test_database.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wiki_flask/tests/test_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+            <state relative-caret-position="153">
+              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <marker date="1523356202791" expanded="true" signature="73:232" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="73:246" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="356:478" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="356:479" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="356:480" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="590:853" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="590:916" ph="CREATE TABLE... IF" />
-                <marker date="1523356202791" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
-                <marker date="1523356202791" expanded="true" signature="2974:3006" ph="INSERT INTO pages... " />
-                <marker date="1523356202791" expanded="true" signature="3268:3306" ph="INSERT INTO page_tag... " />
-                <marker date="1523356202791" expanded="true" signature="3268:3334" ph="INSERT INTO page_tag... " />
-                <marker date="1523356202791" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
-                <marker date="1523356202791" expanded="true" signature="3307:3334" ph="SELECT page.... " />
-                <marker date="1523356202791" expanded="true" signature="3726:3759" ph="INSERT INTO pages... " />
-                <marker date="1523356202791" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
-                <marker date="1523356202791" expanded="true" signature="4714:4730" ph="SELECT INSER... " />
-                <marker date="1523356202791" expanded="true" signature="4714:4762" ph="SELECT ? FRO... ?" />
+                <element signature="e#0#21#0" expanded="true" />
+                <marker date="1523990634131" expanded="true" signature="2320:2518" ph="CREATE TABLE... test_table" />
+                <marker date="1523990634131" expanded="true" signature="2546:2617" ph="SELECT name sqlite_master" />
+                <marker date="1523990634131" expanded="true" signature="2782:2853" ph="SELECT name sqlite_master" />
+                <marker date="1523990634131" expanded="true" signature="3005:3027" ph="SELECT COUNT... missing_value" />
+                <marker date="1523990634131" expanded="true" signature="4298:4325" ph="SELECT COUNT... pages" />
+                <marker date="1523990634131" expanded="true" signature="4666:4692" ph="SELECT COUNT... tags" />
+                <marker date="1523990634131" expanded="true" signature="4948:4997" ph="SELECT id FR... pages" />
+                <marker date="1523990634131" expanded="true" signature="5250:5280" ph="SELECT COUNT... page_tag" />
+                <marker date="1523990634131" expanded="true" signature="6430:6485" ph="SELECT COUNT... pages" />
               </folding>
             </state>
           </provider>
@@ -180,24 +50,14 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wiki_flask/wiki/core.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb8076ef-8395-42c6-9bbe-cd4c17c75b40/console.sql" />
         <option value="$PROJECT_DIR$/wiki_flask/wiki/Database.py" />
-        <option value="$PROJECT_DIR$/wiki_flask/config.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -207,21 +67,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="48" />
-    <option name="width" value="1260" />
-    <option name="height" value="752" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="771" />
-    <option name="width" value="595" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="447" />
+    <option name="width" value="919" />
     <option name="height" value="728" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -238,6 +87,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,27 +105,32 @@
               <item name="RikiWiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="RikiWiki" type="462c0819:PsiDirectoryNode" />
               <item name="wiki_flask" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RikiWiki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RikiWiki" type="462c0819:PsiDirectoryNode" />
+              <item name="wiki_flask" type="462c0819:PsiDirectoryNode" />
               <item name="wiki" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="RikiWiki" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="RikiWiki" />
+        <option name="myAddSourceRoots" value="true" />
+      </console-settings>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -288,56 +144,6 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Riki">
-    <configuration name="Database" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wiki_flask/wiki" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RikiWiki" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wiki_flask/wiki/Database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Riki" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wiki_flask" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RikiWiki" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wiki_flask/Riki.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.Database" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Riki" />
-    </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.Riki" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Database" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -346,60 +152,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f7816d00-a2c2-45ea-8a7c-3b7dc528f542" name="Default" comment="" />
-      <created>1523403038602</created>
+      <changelist id="acf9b503-64cd-4d4f-b7a2-d607ae7d5551" name="Default" comment="" />
+      <created>1523991072334</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1523403038602</updated>
-      <changelist id="b6cd913e-5abb-4d90-a1b9-43da9f27f3b8" name="Default" comment="" />
-      <created>1522967434214</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1522967434214</updated>
+      <updated>1523991072334</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="48" width="1260" height="752" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-	</layout>
-  </component>
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32125986" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12005857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22913617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -409,6 +181,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -419,281 +192,76 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wiki_flask/wiki/core.py</url>
-          <line>391</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
-    </breakpoint-manager>
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/core.py">
+    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5550">
-          <caret line="378" column="35" lean-forward="true" selection-start-line="378" selection-start-column="35" selection-end-line="378" selection-end-column="35" />
-		  <folding />
-        </state>
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
+    <entry file="file://$PROJECT_DIR$/wiki_flask/tests/test_database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#24#33#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1523990634131" expanded="true" signature="2320:2518" ph="CREATE TABLE... test_table" />
+            <marker date="1523990634131" expanded="true" signature="2546:2617" ph="SELECT name sqlite_master" />
+            <marker date="1523990634131" expanded="true" signature="2782:2853" ph="SELECT name sqlite_master" />
+            <marker date="1523990634131" expanded="true" signature="3005:3027" ph="SELECT COUNT... missing_value" />
+            <marker date="1523990634131" expanded="true" signature="4298:4325" ph="SELECT COUNT... pages" />
+            <marker date="1523990634131" expanded="true" signature="4666:4692" ph="SELECT COUNT... tags" />
+            <marker date="1523990634131" expanded="true" signature="4948:4997" ph="SELECT id FR... pages" />
+            <marker date="1523990634131" expanded="true" signature="5250:5280" ph="SELECT COUNT... page_tag" />
+            <marker date="1523990634131" expanded="true" signature="6430:6485" ph="SELECT COUNT... pages" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/forms.py">
+    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/routes.py">
+    <entry file="file://$PROJECT_DIR$/wiki_flask/tests/test_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
-            <element signature="e#62#71#0" expanded="false" />
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1523990634131" expanded="true" signature="2320:2518" ph="CREATE TABLE... test_table" />
+            <marker date="1523990634131" expanded="true" signature="2546:2617" ph="SELECT name sqlite_master" />
+            <marker date="1523990634131" expanded="true" signature="2782:2853" ph="SELECT name sqlite_master" />
+            <marker date="1523990634131" expanded="true" signature="3005:3027" ph="SELECT COUNT... missing_value" />
+            <marker date="1523990634131" expanded="true" signature="4298:4325" ph="SELECT COUNT... pages" />
+            <marker date="1523990634131" expanded="true" signature="4666:4692" ph="SELECT COUNT... tags" />
+            <marker date="1523990634131" expanded="true" signature="4948:4997" ph="SELECT id FR... pages" />
+            <marker date="1523990634131" expanded="true" signature="5250:5280" ph="SELECT COUNT... page_tag" />
+            <marker date="1523990634131" expanded="true" signature="6430:6485" ph="SELECT COUNT... pages" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/Database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1523356202791" expanded="true" signature="73:232" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="73:246" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:478" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:479" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:480" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:853" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:916" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="2974:3006" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3306" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3334" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3307:3334" ph="SELECT page.... " />
-            <marker date="1523356202791" expanded="true" signature="3726:3759" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
-            <marker date="1523356202791" expanded="true" signature="4714:4730" ph="SELECT INSER... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4762" ph="SELECT ? FRO... ?" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://AlchemyModelDependency/#RikiWiki">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>AlchemyModelDependency</ID>
-          <OriginalElement>#RikiWiki</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="601.0" y="185.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#62#71#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/cli.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="e#24#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6bef9ab2/bb8076ef-8395-42c6-9bbe-cd4c17c75b40/main.page_tag">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/wikiDB.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="772" lean-forward="false" selection-start-line="1" selection-start-column="772" selection-end-line="1" selection-end-column="772" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6bef9ab2/bb8076ef-8395-42c6-9bbe-cd4c17c75b40/main.pages">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb8076ef-8395-42c6-9bbe-cd4c17c75b40/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6bef9ab2/bb8076ef-8395-42c6-9bbe-cd4c17c75b40/main.tags">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/6bef9ab2/bb8076ef-8395-42c6-9bbe-cd4c17c75b40/main.page_tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/templates/page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/web/templates/tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="378" column="35" selection-start-line="378" selection-start-column="35" selection-end-line="378" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        <state relative-caret-position="-730">
-          <caret line="451" column="22" lean-forward="false" selection-start-line="451" selection-start-column="22" selection-end-line="451" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/Riki.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#67#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiki_flask/wiki/Database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="89" column="30" lean-forward="false" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1523356202791" expanded="true" signature="73:232" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="73:246" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:478" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:479" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="356:480" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:853" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="590:916" ph="CREATE TABLE... IF" />
-            <marker date="1523356202791" expanded="true" signature="2644:2679" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="2974:3006" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3306" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3334" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3268:3399" ph="INSERT INTO page_tag... " />
-            <marker date="1523356202791" expanded="true" signature="3307:3334" ph="SELECT page.... " />
-            <marker date="1523356202791" expanded="true" signature="3726:3759" ph="INSERT INTO pages... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4729" ph="SELECT ? FRO... ?" />
-            <marker date="1523356202791" expanded="true" signature="4714:4730" ph="SELECT INSER... " />
-            <marker date="1523356202791" expanded="true" signature="4714:4762" ph="SELECT ? FRO... ?" />
-          </folding>
         </state>
       </provider>
     </entry>
