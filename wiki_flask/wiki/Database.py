@@ -101,13 +101,13 @@ class Database(object):
         except Error as e:
             print(e)
 
-    def find_rows(self, select_columns, table_name, count=False, search_criteria=None, order_by=None, row_limit=0, offset=0,
+    def find_rows(self, select_columns, table_name, count_check, search_criteria=None, order_by=None, row_limit=0, offset=0,
                   group_by=None, having_criteria=None):
         """
         Perform selection statement on single table, input must be given in sql style
         :param select_columns: string of columns returned by selection statement separated by commas
         :param table_name: table to be queried
-        :param count: determine whether to use the COUNT function or not. (CAN LATER BE CHANGED TO ACCOUNT
+        :param count_check: determine whether to use the COUNT function or not. (CAN LATER BE CHANGED TO ACCOUNT
         FOR OTHER SPECIAL CASES WITH SELECT STATEMENTS)
         :param search_criteria: expressions to specify desired qualities of the rows in the table
         :param order_by: expression to order selection of rows from table
@@ -119,7 +119,7 @@ class Database(object):
         """
         try:
             c = self.conn.cursor()
-            if count is False:
+            if count_check is False:
                 query = "SELECT %s FROM %s" % (select_columns, table_name)
             else:
                 query = "SELECT COUNT(%s) FROM %s" % (select_columns, table_name)
@@ -135,10 +135,10 @@ class Database(object):
                 query = query + (" GROUP BY %s" % group_by)
             if having_criteria is not None:
                 query = query + (" HAVING %s" % having_criteria)
-            # c.execute(query)
-            # self.conn.commit()
-            # return c.fetchall()
-            return query
+            c.execute(query)
+            self.conn.commit()
+            return c.fetchall()
+            # return query
         except Error as e:
             print(e)
 
@@ -170,9 +170,9 @@ class Database(object):
                 query = query + (" LIMIT %s" % str(row_limit))
             if offset is not 0:
                 query = query + (" OFFSET %s" % str(offset))
-            # c.execute(query)
-            # self.conn.commit()
-            return query
+            c.execute(query)
+            self.conn.commit()
+            # return query
         except Error as e:
             print(e)
 

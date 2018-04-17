@@ -161,14 +161,29 @@ class DatabaseTestCase(WikiBaseTestCase):
         """
         Test search operations on the table
         """
-        # testing query creation process
-        test_query = self.testDB.find_rows("*", "pages", True, "title LIKE '%test%'")  # page 1,2,3
-        self.assertEquals(test_query, "SELECT COUNT(*) FROM pages WHERE title LIKE '%test%'")
+
+        selected_list = self.testDB.find_rows("*", "pages", False, "title LIKE '%test%'")  # page 1,2,3
+
+        # testing query string creation process
+        # self.assertEquals(test_query, "SELECT COUNT(*) FROM pages WHERE title LIKE '%test%'")
+
+        # testing select functionality
+        for row in selected_list:
+            print(row)
+        self.assertEquals(len(selected_list), 3)
 
     def test_table_manipulation_operations(self):
         """
         Test update and delete operations on the table
         """
+
+        # test_query = self.testDB.update_table("pages", ["name"], ["updated_name"], "body LIKE '%are%'")  # page 1
+        self.testDB.update_table("pages", ["name"], ["updated_name"], "body LIKE '%are%'")  # page 1
+
         # testing query creation process
-        test_query = self.testDB.update_table("pages", ["name"], ["updated_name"], "body LIKE '%are%'")  # page 1
-        self.assertEquals(test_query, "UPDATE pages SET name = 'updated_name' WHERE body LIKE '%are%'")
+        # self.assertEquals(test_query, "UPDATE pages SET name = 'updated_name' WHERE body LIKE '%are%'")
+
+        # testing update functionality
+        self.c.execute("SELECT COUNT (*) FROM pages WHERE name = 'updated_name'")
+        pages_updated = self.c.fetchone()[0]
+        self.assertEquals(pages_updated, 1)
