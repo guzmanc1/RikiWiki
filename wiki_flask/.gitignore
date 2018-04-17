@@ -8,3 +8,5 @@ content/
 .eggs
 *.egg-info
 dist/
+.idea
+config.py
