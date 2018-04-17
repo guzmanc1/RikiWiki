@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82d2a695-91a2-4acc-a5f3-5f507d187b22" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/wiki/web/templates/showusers.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/user/users.json" afterPath="$PROJECT_DIR$/user/users.json" />
-      <change beforePath="$PROJECT_DIR$/wiki/web/routes.py" afterPath="$PROJECT_DIR$/wiki/web/routes.py" />
-      <change beforePath="$PROJECT_DIR$/wiki/web/user.py" afterPath="$PROJECT_DIR$/wiki/web/user.py" />
-    </list>
+    <list default="true" id="82d2a695-91a2-4acc-a5f3-5f507d187b22" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
