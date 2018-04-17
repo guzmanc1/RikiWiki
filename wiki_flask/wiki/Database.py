@@ -87,7 +87,7 @@ class Database(object):
             :return: """
         try:
             c = self.conn.cursor()
-            c.execute("INSERT INTO tags VALUES (?)",(name))
+            c.execute("INSERT INTO tags VALUES (?)",(name,))
             self.conn.commit()
         except Error as e:
             print(e)
@@ -122,19 +122,19 @@ class Database(object):
             if count is False:
                 query = "SELECT %s FROM %s" % (select_columns, table_name)
             else:
-                query = "SELECT COUNT(?) FROM ?", (select_columns, table_name)
+                query = "SELECT COUNT(%s) FROM %s" % (select_columns, table_name)
             if search_criteria is not None:
-                query = query + (" WHERE ?", search_criteria)
+                query = query + (" WHERE %s" % search_criteria)
             if order_by is not None:
-                query = query + (" ORDER BY ?", order_by)
+                query = query + (" ORDER BY %s" % order_by)
             if row_limit is not 0:
-                query = query + (" LIMIT ?", str(row_limit))
+                query = query + (" LIMIT %s" % str(row_limit))
             if offset is not 0:
-                query = query + (" OFFSET ?", str(offset))
+                query = query + (" OFFSET %s" % str(offset))
             if group_by is not None:
-                query = query + (" GROUP BY ?", group_by)
+                query = query + (" GROUP BY %s" % group_by)
             if having_criteria is not None:
-                query = query + (" HAVING ?", having_criteria)
+                query = query + (" HAVING %s" % having_criteria)
             # c.execute(query)
             # self.conn.commit()
             # return c.fetchall()
@@ -158,18 +158,18 @@ class Database(object):
         try:
             c = self.conn.cursor()
             # establish initial line with first required change to table with for loop for multiple changes
-            query = "UPDATE ? SET ? = ?", (table_name, change_cols[0], change_values[0])
+            query = "UPDATE %s SET %s = '%s'" % (table_name, change_cols[0], change_values[0])
             if len(change_cols) > 1:
                 for i in range(1, len(change_cols)):
-                    query = query + ", ? = ?", (change_cols[i], change_values[i])
+                    query = query + ", %s = '%s'" % (change_cols[i], change_values[i])
             if search_criteria is not None:
-                query = query + (" WHERE ?", search_criteria)
+                query = query + " WHERE %s" % search_criteria
             if order_by is not None:
-                query = query + (" ORDER BY ?", order_by)
+                query = query + (" ORDER BY %s" % order_by)
             if row_limit is not 0:
-                query = query + (" LIMIT ?", str(row_limit))
+                query = query + (" LIMIT %s" % str(row_limit))
             if offset is not 0:
-                query = query + (" OFFSET ?", str(offset))
+                query = query + (" OFFSET %s" % str(offset))
             # c.execute(query)
             # self.conn.commit()
             return query
@@ -177,7 +177,7 @@ class Database(object):
             print(e)
 
 
-    def delete_row(self,table_name, search_criteria):
+    def delete_row(self,table_name, search_criteria = None):
         ''' Delete row from page table
         :param table_name: name of the table
         :param search_criteria: conditional expressions used for querying table
@@ -186,10 +186,11 @@ class Database(object):
         try:
             c = self.conn.cursor()
             # establish initial line with first required change to table with for loop for multiple changes
-            query = "DELETE FROM ? WHERE ?;", (table_name,search_criteria)
-            # c.execute(query)
-            # self.conn.commit()
-            return query
+            query = "DELETE FROM %s" % table_name
+            if search_criteria is not None:
+                query = query + " WHERE %s" % search_criteria
+            c.execute(query)
+            self.conn.commit()
         except Error as e:
             print(e)
 

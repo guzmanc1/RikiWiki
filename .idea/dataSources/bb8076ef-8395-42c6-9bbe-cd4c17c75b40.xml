@@ -32,8 +32,6 @@
       <NameSurrogate>1</NameSurrogate>
       <ColNames>page_id
 tag_id</ColNames>
-      <ColumnCollations>
-</ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="14" parent="6">
@@ -112,7 +110,6 @@ tag_id</ColNames>
     <index id="30" parent="10" name="sqlite_autoindex_tags_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="31" parent="10">

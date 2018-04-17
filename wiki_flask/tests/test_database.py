@@ -21,7 +21,7 @@ Test test test
 
 PAGE_CONTENT_3 = u"""\
 title: Not_Test
-tags: z
+tags: z, one, d
 
 Woo!
 """
@@ -56,7 +56,7 @@ class DatabaseTestCase(WikiBaseTestCase):
     page_2 = None
     page_3 = None
     page_4 = None
-    all_pages = [page_1, page_2, page_3, page_4]
+    all_pages = []
 
     # create test database using function in __init__.py
     WikiBaseTestCase.create_test_database()
@@ -80,25 +80,16 @@ class DatabaseTestCase(WikiBaseTestCase):
         self.page_2 = Page(page_path_2, URL_2)
         self.page_3 = Page(page_path_3, URL_3)
         self.page_4 = Page(page_path_4, URL_4)
-
-    def isSQLite3(self, filename):
-        from os.path import isfile, getsize
-
-        if not isfile(filename):
-            return False
-        if getsize(filename) < 100:  # SQLite database file header is 100 bytes
-            return False
-        # with open(filename, 'rb') as fd:
-            # header = fd.read(100)
-        return True
-        # return header[:16] == 'SQLite format 3\x00'
+        self.all_pages.append(self.page_1)
+        self.all_pages.append(self.page_2)
+        self.all_pages.append(self.page_3)
+        self.all_pages.append(self.page_4)
 
     def test_database_operations(self):
         """
         Test database connection function and high-level operations on tables like table creation and deletion
         """
         # Test database creation
-        self.assertTrue(self.isSQLite3("testDB"))
         self.assertIsNot(self.testDB.conn,None)
 
         # Test table manipulation
@@ -111,15 +102,33 @@ class DatabaseTestCase(WikiBaseTestCase):
 
         self.testDB.drop_table("test_table")
         self.c.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='test_table';")
-        new_table = self.c.fetchone()[0]
-        self.assertEquals(new_table, "")
+        new_table = self.c.fetchone()
+        self.assertEquals(new_table, None)
+
+    def get_table_size(self, table_name):
+        self.c.execute("SELECT COUNT (*) FROM %s" % table_name)
+        table_size = self.c.fetchone()[0]
+        return table_size
 
     def test_table_insert_operations(self):
         """
         Test insertion of elements into page and tags table then test function to populate junction table
         """
 
-        # test the insert function for the page table
+        # reset the tables for new test entries
+        init_page_rows = self.get_table_size("pages")
+        init_tags_rows = self.get_table_size("tags")
+        init_page_tag_rows = self.get_table_size("page_tag")
+        if init_page_rows > 0:
+            self.testDB.delete_row("pages")
+            self.testDB.delete_row("sqlite_sequence", "name = 'pages'")
+        if init_tags_rows > 0:
+            self.testDB.delete_row("tags")
+            self.testDB.delete_row("sqlite_sequence", "name = 'tags'")
+        if init_page_tag_rows > 0:
+            self.testDB.delete_row("page_tag")
+
+    # test the insert function for the page table
         self.testDB.insert_page(self.page_1.url, self.page_1.title, self.page_1.body)
         self.testDB.insert_page(self.page_2.url, self.page_2.title, self.page_2.body)
         self.testDB.insert_page(self.page_3.url, self.page_3.title, self.page_3.body)
@@ -130,7 +139,8 @@ class DatabaseTestCase(WikiBaseTestCase):
 
         # test the insert function for the tags table
         for page in self.all_pages:
-            for tag in page.tags:
+            tags_list = [x.strip() for x in page.tags.split(',')]
+            for tag in tags_list:
                 self.testDB.insert_tag(tag)
         self.c.execute("SELECT COUNT (*) FROM tags")
         num_rows = self.c.fetchone()[0]
@@ -138,13 +148,14 @@ class DatabaseTestCase(WikiBaseTestCase):
 
         # test the insert function for the page_tag junction table, inserts one entry for each tag on a page
         for page in self.all_pages:
-            self.c.execute("SELECT id FROM pages WHERE name = ? AND title = ?;", (page.name, page.title))
+            self.c.execute("SELECT id FROM pages WHERE name = ? AND title = ?;", (page.url, page.title))
             page_id = self.c.fetchone()[0]
-            for tag in page.tags:
+            tags_list = [x.strip() for x in page.tags.split(',')]
+            for tag in tags_list:
                 self.testDB.insert_page_tag(page_id, tag)
         self.c.execute("SELECT COUNT (*) FROM page_tag")
         num_rows = self.c.fetchone()[0]
-        self.assertEquals(num_rows, 9)
+        self.assertEquals(num_rows, 11)
 
     def test_table_read_operations(self):
         """
