@@ -11,6 +11,7 @@ from flask import abort
 from flask import url_for
 import markdown
 import ntpath
+from wiki.Database import create_db_instance
 
 def clean_url(url):
     """
@@ -473,9 +474,26 @@ class Wiki(object):
     def path(self, url):
         return os.path.join(self.root, url + '.md')
 
+    # def exists(self, url):
+    #    """ Queries the database to see if page exists with given url
+    #    :param url: name of page
+    #    :return exists: boolean value whether page found in database"""
+    #    db_instance = create_db_instance("wikiDB")
+    #    page_exists = db_instance.find_rows("name", "pages", True, "name LIKE '%s'" % url)
+    #    db_instance.close_connection()
+    #    if page_exists == 0:
+    #        return False
+    #    else:
+    #       return True
+
     def exists(self, url):
         path = self.path(url)
         return os.path.exists(path)
+
+    # def get(self,url):
+    #    if self.exists(url):
+    #        page_row = db_instance.find_rows("name", "pages", False, "name LIKE '%s'" % url)
+    #        page = Page()
 
     def get(self, url):
         path = self.path(url)
@@ -483,6 +501,7 @@ class Wiki(object):
         if self.exists(url):
             return Page(path, url)
         return None
+
 
     def get_or_404(self, url):
         page = self.get(url)

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Database</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Database</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/users/brentbarnhorst/desktop/rikiwiki/wiki_flask/wiki/database.py">c:\users\brentbarnhorst\desktop\rikiwiki\wiki_flask\wiki\database.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Database.html#Database">Database</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Database">class <strong>Database</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Database-__init__"><strong>__init__</strong></a>(self, database_name)</dt></dl>
+
+<dl><dt><a name="Database-close_connection"><strong>close_connection</strong></a>(self)</dt><dd><tt>Close&nbsp;the&nbsp;connection&nbsp;to&nbsp;the&nbsp;database</tt></dd></dl>
+
+<dl><dt><a name="Database-create_connection"><strong>create_connection</strong></a>(self)</dt><dd><tt>"&nbsp;create&nbsp;connection&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;to&nbsp;SQLite&nbsp;<a href="#Database">Database</a>&nbsp;and&nbsp;create&nbsp;database&nbsp;if&nbsp;it&nbsp;doesn't&nbsp;exist<br>
+:return&nbsp;Connectin&nbsp;<a href="__builtin__.html#object">object</a>&nbsp;or&nbsp;None</tt></dd></dl>
+
+<dl><dt><a name="Database-create_table"><strong>create_table</strong></a>(self, create_string)</dt><dd><tt>create&nbsp;a&nbsp;table&nbsp;in&nbsp;database&nbsp;using&nbsp;sql&nbsp;string<br>
+:param&nbsp;create_string:&nbsp;the&nbsp;sql&nbsp;statement&nbsp;to&nbsp;create&nbsp;table<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="Database-delete_row"><strong>delete_row</strong></a>(self, table_name, search_criteria<font color="#909090">=None</font>)</dt><dd><tt>Delete&nbsp;row&nbsp;from&nbsp;page&nbsp;table<br>
+:param&nbsp;table_name:&nbsp;name&nbsp;of&nbsp;the&nbsp;table<br>
+:param&nbsp;search_criteria:&nbsp;conditional&nbsp;expressions&nbsp;used&nbsp;for&nbsp;querying&nbsp;table<br>
+:return&nbsp;id&nbsp;of&nbsp;row&nbsp;deleted</tt></dd></dl>
+
+<dl><dt><a name="Database-drop_table"><strong>drop_table</strong></a>(self, table_name)</dt><dd><tt>Drop&nbsp;a&nbsp;table&nbsp;within&nbsp;the&nbsp;database<br>
+:param&nbsp;table_name:&nbsp;name&nbsp;of&nbsp;table&nbsp;to&nbsp;be&nbsp;deleted<br>
+:return:&nbsp;message&nbsp;indicating&nbsp;table&nbsp;deletion&nbsp;successful&nbsp;or&nbsp;failed</tt></dd></dl>
+
+<dl><dt><a name="Database-find_rows"><strong>find_rows</strong></a>(self, select_columns, table_name, count_check, search_criteria<font color="#909090">=None</font>, order_by<font color="#909090">=None</font>, row_limit<font color="#909090">=0</font>, offset<font color="#909090">=0</font>, group_by<font color="#909090">=None</font>, having_criteria<font color="#909090">=None</font>)</dt><dd><tt>Perform&nbsp;selection&nbsp;statement&nbsp;on&nbsp;single&nbsp;table,&nbsp;input&nbsp;must&nbsp;be&nbsp;given&nbsp;in&nbsp;sql&nbsp;style<br>
+:param&nbsp;select_columns:&nbsp;string&nbsp;of&nbsp;columns&nbsp;returned&nbsp;by&nbsp;selection&nbsp;statement&nbsp;separated&nbsp;by&nbsp;commas<br>
+:param&nbsp;table_name:&nbsp;table&nbsp;to&nbsp;be&nbsp;queried<br>
+:param&nbsp;count_check:&nbsp;determine&nbsp;whether&nbsp;to&nbsp;use&nbsp;the&nbsp;COUNT&nbsp;function&nbsp;or&nbsp;not.&nbsp;(CAN&nbsp;LATER&nbsp;BE&nbsp;CHANGED&nbsp;TO&nbsp;ACCOUNT<br>
+FOR&nbsp;OTHER&nbsp;SPECIAL&nbsp;CASES&nbsp;WITH&nbsp;SELECT&nbsp;STATEMENTS)<br>
+:param&nbsp;search_criteria:&nbsp;expressions&nbsp;to&nbsp;specify&nbsp;desired&nbsp;qualities&nbsp;of&nbsp;the&nbsp;rows&nbsp;in&nbsp;the&nbsp;table<br>
+:param&nbsp;order_by:&nbsp;expression&nbsp;to&nbsp;order&nbsp;selection&nbsp;of&nbsp;rows&nbsp;from&nbsp;table<br>
+:param&nbsp;row_limit:&nbsp;limit&nbsp;the&nbsp;number&nbsp;of&nbsp;rows&nbsp;searched&nbsp;from&nbsp;the&nbsp;table<br>
+:param&nbsp;offset:&nbsp;specify&nbsp;first&nbsp;row&nbsp;selected&nbsp;from&nbsp;given&nbsp;conditions<br>
+:param&nbsp;group_by:&nbsp;group&nbsp;rows&nbsp;together&nbsp;to&nbsp;be&nbsp;able&nbsp;to&nbsp;perform&nbsp;aggregate&nbsp;functions&nbsp;on&nbsp;them<br>
+:param&nbsp;having_criteria:&nbsp;criteria&nbsp;for&nbsp;grouping&nbsp;selected&nbsp;rows<br>
+:return:&nbsp;list&nbsp;of&nbsp;rows&nbsp;from&nbsp;query</tt></dd></dl>
+
+<dl><dt><a name="Database-insert_page"><strong>insert_page</strong></a>(self, name, title, body)</dt><dd><tt>Insert&nbsp;a&nbsp;new&nbsp;page&nbsp;in&nbsp;the&nbsp;page&nbsp;table<br>
+:param&nbsp;name:&nbsp;name&nbsp;of&nbsp;the&nbsp;page<br>
+:param&nbsp;title:&nbsp;title&nbsp;for&nbsp;the&nbsp;new&nbsp;page<br>
+:param&nbsp;body:&nbsp;content&nbsp;on&nbsp;the&nbsp;page<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="Database-insert_page_tag"><strong>insert_page_tag</strong></a>(self, page_num, tag_name)</dt><dd><tt>Insert&nbsp;an&nbsp;entry&nbsp;into&nbsp;the&nbsp;junction&nbsp;table&nbsp;for&nbsp;each&nbsp;tag&nbsp;on&nbsp;a&nbsp;page</tt></dd></dl>
+
+<dl><dt><a name="Database-insert_tag"><strong>insert_tag</strong></a>(self, name)</dt><dd><tt>Insert&nbsp;a&nbsp;new&nbsp;page&nbsp;in&nbsp;the&nbsp;page&nbsp;table<br>
+:param&nbsp;name:&nbsp;name&nbsp;of&nbsp;tag&nbsp;being&nbsp;created<br>
+:return:</tt></dd></dl>
+
+<dl><dt><a name="Database-update_table"><strong>update_table</strong></a>(self, table_name, change_cols, change_values, search_criteria<font color="#909090">=None</font>, order_by<font color="#909090">=None</font>, row_limit<font color="#909090">=0</font>, offset<font color="#909090">=0</font>)</dt><dd><tt>Update&nbsp;an&nbsp;entry&nbsp;in&nbsp;the&nbsp;pages&nbsp;table<br>
+:param&nbsp;table_name:&nbsp;name&nbsp;of&nbsp;the&nbsp;table&nbsp;to&nbsp;be&nbsp;updated<br>
+:param&nbsp;change_cols:&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;columns&nbsp;to&nbsp;be&nbsp;changed&nbsp;in&nbsp;update&nbsp;statement<br>
+:param&nbsp;change_values:&nbsp;a&nbsp;list&nbsp;of&nbsp;the&nbsp;values&nbsp;in&nbsp;each&nbsp;column&nbsp;to&nbsp;be&nbsp;changed.<br>
+:param&nbsp;search_criteria:&nbsp;filter&nbsp;for&nbsp;query<br>
+:param&nbsp;order_by:&nbsp;column&nbsp;to&nbsp;sort&nbsp;query&nbsp;and&nbsp;in&nbsp;what&nbsp;direction&nbsp;DESC&nbsp;by&nbsp;default<br>
+:param&nbsp;row_limit:&nbsp;limit&nbsp;number&nbsp;of&nbsp;rows&nbsp;to&nbsp;be&nbsp;changed<br>
+:param&nbsp;offset:&nbsp;number&nbsp;of&nbsp;rows&nbsp;left&nbsp;unchanged&nbsp;from&nbsp;selection&nbsp;before&nbsp;altering&nbsp;table<br>
+:return&nbsp;row&nbsp;ids&nbsp;of&nbsp;changed&nbsp;rows&nbsp;in&nbsp;table</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_db_instance"><strong>create_db_instance</strong></a>(database_name)</dt><dd><tt>#&nbsp;create&nbsp;isntance&nbsp;of&nbsp;database</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>page_table</strong> = 'CREATE TABLE IF NOT EXISTS pages (id INTEGER NOT...NOT NULL,title TEXT NOT NULL,body TEXT NOT NULL);'<br>
+<strong>page_tag_table</strong> = 'CREATE TABLE IF NOT EXISTS page_tag (page_id INT...s(id),FOREIGN KEY(tag_id) REFERENCES tags(name));'<br>
+<strong>tag_table</strong> = 'CREATE TABLE IF NOT EXISTS tags (name TEXT PRIMARY KEY NOT NULL);'</td></tr></table>
+</body></html>

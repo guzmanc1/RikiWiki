@@ -101,6 +101,7 @@ class Database(object):
         except Error as e:
             print(e)
 
+
     def find_rows(self, select_columns, table_name, count_check, search_criteria=None, order_by=None, row_limit=0, offset=0,
                   group_by=None, having_criteria=None):
         """
@@ -194,17 +195,9 @@ class Database(object):
         except Error as e:
             print(e)
 
-
-def main():
-    new_db = Database("wikiDB")
-    if new_db.conn is not None:
-        # table operations
-        new_db.create_table(page_table)
-        new_db.create_table(tag_table)
-        new_db.create_table(page_tag_table)
-    else:
-        print("Error creating database connection.")
-
-
-if __name__ == '__main__':
-    main()
+# create isntance of database
+def create_db_instance(database_name):
+    if database_name != "":
+        db_instance = Database(database_name)
+        return db_instance
+    return None
